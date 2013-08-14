@@ -1,5 +1,6 @@
 from App.Management import Navigation
 from Acquisition import aq_parent
+import json
 
 def manage_page_footer(self):
   default = '</body></html>'
@@ -26,6 +27,9 @@ def manage_page_footer(self):
   textarea_selector = '' # jQuery selector for the origin textarea that we will
                          # change into an ace editor
 
+  live_check_python_script = 0 # Check python scripts on the fly
+  bound_names = 'undefined'
+
   if document.meta_type in ('DTML Document', 'DTML Method'):
     if document.getId().endswith('.js'):
       mode = 'javascript'
@@ -41,6 +45,13 @@ def manage_page_footer(self):
   elif document.meta_type in ('Script (Python)', ):
     mode = 'python'
     textarea_selector = 'textarea[name="body:text"]'
+    # printed is from  RestrictedPython.RestrictionMutator the rest comes
+    # from RestrictedPython.Utilities.utility_builtins
+    bound_names = json.dumps(
+      document.getBindingAssignments().getAssignedNamesInOrder()
+       + ['printed', 'same_type', 'string', 'sequence', 'random', 'DateTime',
+           'whrandom', 'reorder', 'sets', 'test', 'math'])
+    live_check_python_script = 1 # XXX make it a preference ?
   elif document.meta_type in ('Z SQL Method', ):
     mode = 'sql'
     textarea_selector = 'textarea[name="template:text"]'
@@ -78,6 +89,17 @@ $(document).ready(function() {
     editor.getSession().setValue(textarea.val());
     editor.getSession().on('change', function(){
       textarea.val(editor.getSession().getValue());
+      if (%(live_check_python_script)s) {
+        $.post('%(portal_url)s/ERP5Site_checkPythonScriptAsJSON',
+          {'data': JSON.stringify(
+          { code: editor.getSession().getValue(),
+            bound_names: %(bound_names)s,
+            params: $('input[name="params"]').val() })},
+          function(data){
+            editor.getSession().setAnnotations(data.annotations);
+          }
+          );
+      }
     });
 
     editor.commands.addCommand({
