@@ -34,7 +34,6 @@ from AccessControl import ClassSecurityInfo
 
 from Products.ERP5Type import Permissions, PropertySheet, interfaces
 
-from Products.ERP5.Document.OrderLine import OrderLine
 from Products.ERP5.Document.Movement import Movement
 from Products.ERP5.Document.MappedValue import MappedValue
 from Products.ERP5.Document.ImmobilisationMovement import ImmobilisationMovement

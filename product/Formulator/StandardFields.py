@@ -1,7 +1,5 @@
 from Form import BasicForm
 from Field import ZMIField
-from DummyField import fields
-from MethodField import BoundMethod
 from DateTime import DateTime
 import Validator, Widget
 import OFS

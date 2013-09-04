@@ -23,7 +23,6 @@ from ZODB.ExportImport import TemporaryFile
 from pickle import Pickler, EMPTY_DICT, MARK, DICT
 from cPickle import loads, dumps
 from types import TupleType
-from types import StringType
 from types import DictionaryType
 from OFS import ObjectManager, XMLExportImport
 

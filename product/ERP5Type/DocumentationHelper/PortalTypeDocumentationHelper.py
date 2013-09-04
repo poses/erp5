@@ -30,9 +30,7 @@ from AccessControl import ClassSecurityInfo
 from Products.ERP5Type.Globals import InitializeClass
 from Products.ERP5Type import Permissions
 from DocumentationHelper import DocumentationHelper, TempObjectLibrary
-from DocumentationSection import DocumentationSection
 from PortalTypeInstanceDocumentationHelper import PortalTypeInstanceDocumentationHelper
-
 def getPortalType(uri=''):
   """
   Extract portal type from uri to create a temporary object oh that portal_type

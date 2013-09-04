@@ -27,7 +27,6 @@
 ##############################################################################
 
 import zope.interface
-from AccessControl import ClassSecurityInfo
 from Products.ERP5Type import Permissions, interfaces
 from Products.ERP5.Document.Amount import Amount
 

@@ -29,7 +29,6 @@
 from MethodObject import Method
 from copy import copy
 import sys
-from zLOG import LOG
 
 class Accessor(Method):
     """

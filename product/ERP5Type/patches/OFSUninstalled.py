@@ -20,7 +20,6 @@ from OFS import Uninstalled
 if '__getstate__' not in Uninstalled.BrokenClass.__dict__:
 
   from ZODB.broken import persistentBroken, PersistentBroken
-  from persistent import Persistent
   from threading import RLock
   Uninstalled.broken_klasses_lock = lock = RLock()
   Uninstalled_Broken = Uninstalled.Broken

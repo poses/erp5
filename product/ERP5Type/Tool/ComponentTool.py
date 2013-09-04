@@ -28,7 +28,6 @@
 #
 ##############################################################################
 
-from types import ModuleType
 
 import transaction
 import sys

@@ -30,7 +30,6 @@ from Products.CMFCore.utils import getToolByName
 from AccessControl import ClassSecurityInfo, Unauthorized
 from Products.ERP5Type import Permissions
 from OFS.Image import Pdata
-from cStringIO import StringIO
 from Products.ERP5Type.TransactionalVariable import getTransactionalVariable
 
 _MARKER = []

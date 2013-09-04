@@ -1,7 +1,6 @@
 from rigging import transformer
 
 import os
-from stat import ST_MTIME
 
 
 ## BIG BAD FUNCTIONAL TEST OF OOo Word Conversion

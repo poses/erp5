@@ -2,7 +2,6 @@
 from Products.PortalTransforms.interfaces import itransform
 from zope.interface import implements
 from oood_commandtransform import OOOdCommandTransform, OOoDocumentDataStream
-from zLOG import LOG
 
 
 class OdtToDoc:

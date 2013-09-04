@@ -32,7 +32,6 @@
 import unittest
 import os, cStringIO, zipfile
 from lxml import etree
-from Testing import ZopeTestCase
 from DateTime import DateTime
 from AccessControl.SecurityManagement import newSecurityManager
 from Products.ERP5Type.Utils import convertToUpperCase

@@ -92,7 +92,6 @@ from zope.interface import classImplementsOnly, implementedBy
 from string import join
 import sys, re
 
-from cStringIO import StringIO
 from socket import gethostname, gethostbyaddr
 import random
 

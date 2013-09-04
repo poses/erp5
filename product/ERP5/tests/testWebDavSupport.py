@@ -28,16 +28,10 @@
 #
 ##############################################################################
 
-import re
 import unittest
 import os
-from AccessControl import Unauthorized
-from AccessControl.SecurityManagement import newSecurityManager
-from AccessControl.SecurityManagement import getSecurityManager
-from Testing import ZopeTestCase
 from Products.ERP5Type.tests.ERP5TypeTestCase import ERP5TypeTestCase
-from Products.ERP5Type.tests.utils import DummyLocalizer,\
-     createZODBPythonScript, FileUpload
+from Products.ERP5Type.tests.utils import FileUpload
 from Products.ERP5Type.tests.backportUnittest import expectedFailure
 
 import httplib

@@ -30,7 +30,6 @@ from Acquisition import aq_base
 from ZPublisher.HTTPRequest import FileUpload
 from Base import func_code, type_definition, list_types, ATTRIBUTE_PREFIX, Getter as BaseGetter, Setter as BaseSetter, Tester as BaseTester
 from Products.ERP5Type.PsycoWrapper import psyco
-from zLOG import LOG
 
 class Getter(BaseGetter):
     """

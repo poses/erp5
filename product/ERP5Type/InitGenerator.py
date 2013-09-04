@@ -33,7 +33,6 @@ import os, re, string, sys
 from Products.ERP5Type import document_class_registry
 from Products.ERP5Type.Globals import package_home, InitializeClass
 
-from zLOG import LOG
 
 product_document_registry = {}
 product_interactor_registry = []

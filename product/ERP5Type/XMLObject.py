@@ -34,7 +34,6 @@ from Products.ERP5Type import PropertySheet, Permissions
 from Products.ERP5Type.Utils import convertToUpperCase
 
 from Core.Folder import Folder
-from zLOG import LOG
 
 class XMLObject( Folder ):
     """

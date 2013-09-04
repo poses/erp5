@@ -34,14 +34,10 @@ from xml.dom import Node, minidom
 from AccessControl import ClassSecurityInfo
 from Products.ERP5Type.Globals import InitializeClass, get_request
 from zipfile import ZipFile, ZIP_DEFLATED
-from StringIO import StringIO
 from zLOG import LOG, TRACE, WARNING, ERROR, INFO
 import imghdr
 import random
 import getopt, sys, os, re
-from urllib import quote
-
-from Products.ERP5.ERP5Site import ERP5Site
 from Products.Formulator.TALESField import TALESMethod
 from Products.Formulator.MethodField import Method
 from Products.ERP5Type.Utils import convertToUpperCase

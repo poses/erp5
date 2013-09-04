@@ -1,7 +1,6 @@
 import os
 import OFS
 from App.ImageFile import ImageFile
-from FieldHelpTopic import FieldHelpTopic
 
 class FieldRegistry:
     """A registry of fields, maintaining a dictionary with

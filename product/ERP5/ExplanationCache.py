@@ -28,7 +28,6 @@
 ##############################################################################
 
 from collections import defaultdict
-from zLOG import LOG
 from Products.ERP5Type.Cache import transactional_cached
 from Products.ERP5Type.UnrestrictedMethod import UnrestrictedMethod
 

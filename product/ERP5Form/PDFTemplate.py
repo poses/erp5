@@ -43,7 +43,6 @@ from ZODB.POSException import ConflictError
 
 from Products.ERP5Type.Utils import UpperCase
 
-from zLOG import LOG
 
 try:
     from webdav.Lockable import ResourceLockedError

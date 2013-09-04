@@ -8,7 +8,6 @@ import os
 from AccessControl.SecurityManagement import newSecurityManager
 from AccessControl.SecurityManagement import noSecurityManager
 from AccessControl.User import system as SystemUser,SimpleUser
-from cStringIO import StringIO
 from OFS.Folder import Folder
 from Products.MailHost.MailHost import MailHost
 from test_MailTemplate import DummyMailHost,Zope,get_transaction

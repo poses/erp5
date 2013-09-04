@@ -37,7 +37,7 @@ from Products.ERP5Type.Base import Base
 from Products.ERP5Type.Utils import simple_decorator
 from DateTime import DateTime
 from Products.ERP5Type.tests.backportUnittest import expectedFailure
-from Products.ERP5Type.tests.utils import createZODBPythonScript, updateCellList
+from Products.ERP5Type.tests.utils import createZODBPythonScript
 
 
 def save_result_as(name):

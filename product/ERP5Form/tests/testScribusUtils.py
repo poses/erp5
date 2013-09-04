@@ -27,10 +27,8 @@
 
 import unittest
 import os
-from zLOG import LOG
 
 from Testing import ZopeTestCase
-from Products.ERP5Type.tests.ERP5TypeTestCase import ERP5TypeTestCase
 from Products.ERP5Type.tests.utils import FileUpload
 from AccessControl.SecurityManagement import newSecurityManager
 from DateTime import DateTime

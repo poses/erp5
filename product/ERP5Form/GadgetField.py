@@ -2,7 +2,6 @@ from Products.Formulator.Field import ZMIField
 from Products.Formulator import Widget
 from Products.Formulator.DummyField import fields
 from Products.Formulator import Validator
-from zLOG import LOG
 
 class GadgetWidget(Widget.TextWidget):
   """

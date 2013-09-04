@@ -29,9 +29,7 @@
 ##############################################################################
 
 import unittest
-import time
 from Products.ERP5Type.tests.ERP5TypeTestCase import ERP5TypeTestCase
-from Products.ERP5Type.tests.backportUnittest import expectedFailure
 from DateTime import DateTime
 
 class TestAuoLogout(ERP5TypeTestCase):

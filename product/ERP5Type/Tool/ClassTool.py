@@ -40,7 +40,6 @@ import OFS
 import transaction
 from zExceptions import BadRequest
 from zExceptions import Unauthorized
-from Acquisition import Implicit
 from AccessControl import ClassSecurityInfo
 from Products.ERP5Type.Globals import InitializeClass, DTMLFile
 from App.config import getConfiguration

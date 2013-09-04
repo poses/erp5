@@ -33,7 +33,6 @@ from Products.ERP5Type.tests.ERP5TypeTestCase import ERP5TypeTestCase
 import unittest
 
 # Initialize ERP5Form Product to load monkey patches
-from Testing import ZopeTestCase
 
 from Acquisition import aq_base
 from Products.Formulator.FieldRegistry import FieldRegistry

@@ -31,7 +31,6 @@ from Products.CMFCore.WorkflowCore import WorkflowException
 from Products.ERP5TioSafe.Conduit.TioSafeBaseConduit import TioSafeBaseConduit
 from lxml import etree
 parser = etree.XMLParser(remove_blank_text=True)
-from zLOG import LOG
 
 class ERP5ResourceConduit(TioSafeBaseConduit):
   """

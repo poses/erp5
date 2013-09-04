@@ -31,7 +31,6 @@ from Products.ERP5Type.XMLObject import XMLObject
 from Products.ERP5TioSafe.Utils import EchoDictTarget
 from Products.PageTemplates.ZopePageTemplate import ZopePageTemplate
 from App.Extensions import getBrain
-from lxml import etree
 from zLOG import LOG, ERROR
 from urllib2 import URLError, HTTPError
 

@@ -27,7 +27,6 @@
 #
 ##############################################################################
 
-from Constraint import Constraint
 from Products.ERP5Type.Constraint.CategoryMembershipArity \
           import CategoryMembershipArity
 

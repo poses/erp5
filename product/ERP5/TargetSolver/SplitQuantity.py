@@ -28,7 +28,6 @@
 ##############################################################################
 
 from CopyToTarget import CopyToTarget
-from zLOG import LOG
 
 class SplitQuantity(CopyToTarget):
   """

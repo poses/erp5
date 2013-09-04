@@ -29,7 +29,6 @@
 
 from Acquisition import Implicit
 
-from zLOG import LOG
 
 class Filter(Implicit):
 

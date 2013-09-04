@@ -41,7 +41,6 @@ from Products.ERP5 import _dtmldir
 from Products.ERP5.Tool.LogMixin import LogMixin
 from Products.ERP5Type.Utils import _setSuperSecurityManager
 from App.config import getConfiguration
-from AccessControl import Unauthorized
 from Products.ERP5Type.Cache import CachingMethod
 from cgi import escape
 

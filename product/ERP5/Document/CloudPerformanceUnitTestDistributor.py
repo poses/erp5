@@ -26,7 +26,6 @@
 ##############################################################################
 from ERP5ProjectUnitTestDistributor import ERP5ProjectUnitTestDistributor
 import json
-from zLOG import LOG,INFO,ERROR
 from AccessControl import ClassSecurityInfo
 from Products.ERP5Type import Permissions
 

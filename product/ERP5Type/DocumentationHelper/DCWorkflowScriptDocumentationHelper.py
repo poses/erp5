@@ -26,7 +26,6 @@
 #
 ##############################################################################
 
-from AccessControl import ClassSecurityInfo
 from Products.ERP5Type.Globals import InitializeClass
 from ScriptPythonDocumentationHelper import ScriptPythonDocumentationHelper
 from Products.ERP5Type import Permissions

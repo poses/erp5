@@ -28,4 +28,3 @@
 
 # XXX deprecated; use 'collections' instead, even on Python < 2.7
 
-from collections import OrderedDict

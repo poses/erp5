@@ -33,7 +33,6 @@ from Products.ERP5Type import Permissions, PropertySheet, Constraint, interfaces
 from Products.ERP5.Document.Resource import Resource
 from zope.interface import implements
 
-from zLOG import LOG
 
 
 class CashCurrency(Resource):

@@ -28,7 +28,6 @@
 
 
 from Base import func_code, type_definition, list_types, ATTRIBUTE_PREFIX, Setter as BaseSetter, Getter as BaseGetter
-from zLOG import LOG
 from Products.ERP5Type.PsycoWrapper import psyco
 
 class ListSetter(BaseSetter):

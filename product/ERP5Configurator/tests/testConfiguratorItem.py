@@ -26,7 +26,6 @@
 ##############################################################################
 
 
-from AccessControl import Unauthorized
 from zLOG import LOG, INFO
 import uuid
 from DateTime import DateTime

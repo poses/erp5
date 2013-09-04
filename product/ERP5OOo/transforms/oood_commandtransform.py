@@ -6,7 +6,6 @@ from Products.ERP5.Document.Document import ConversionError
 from Acquisition import aq_base
 from zope.interface import implements
 from OFS.Image import Image as OFSImage
-from zLOG import LOG
 
 from Products.ERP5OOo.OOoUtils import OOoBuilder
 import re

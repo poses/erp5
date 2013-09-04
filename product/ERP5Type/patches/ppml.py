@@ -22,7 +22,6 @@ from Shared.DC.xml.ppml import *
 from Shared.DC.xml import ppml
 
 from marshal import dumps as mdumps
-from zLOG import LOG
 
 # For converting to a more readable expression.
 reprs = {}

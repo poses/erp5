@@ -24,7 +24,6 @@ from Products.CMFDefault.utils import parseHeadersBody
 from Products.CMFDefault.utils import html_headcheck
 from Products.CMFDefault.utils import bodyfinder
 from Products.CMFDefault.utils import SimpleHTMLParser as CMFSimpleHTMLParser
-from zLOG import LOG
 
 security = ModuleSecurityInfo( 'Products.ERP5Type.WebDAVSupport' )
 

@@ -35,7 +35,6 @@ from Acquisition import Implicit
 from Products.PythonScripts.Utility import allow_class
 from ZPublisher.HTTPRequest import FileUpload
 from xml.dom import Node
-from AccessControl import ClassSecurityInfo
 from Products.ERP5Type.Globals import InitializeClass, get_request
 from zipfile import ZipFile, ZIP_DEFLATED
 from cStringIO import StringIO

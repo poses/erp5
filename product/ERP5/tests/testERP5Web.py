@@ -32,7 +32,6 @@ import re
 import unittest
 from AccessControl import Unauthorized
 from Testing import ZopeTestCase
-from Products.ERP5Type.TransactionalVariable import getTransactionalVariable
 from Products.ERP5Type.tests.ERP5TypeTestCase import ERP5TypeTestCase
 from Products.ERP5Type.tests.utils import DummyLocalizer
 from Products.ERP5Type.tests.utils import createZODBPythonScript

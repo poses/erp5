@@ -35,7 +35,6 @@
 # from __setstate__.
 
 import logging, re
-from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base
 from OFS.Folder import Folder as OFS_Folder
 from persistent import Persistent, wref

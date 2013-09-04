@@ -38,7 +38,6 @@ from Products.ERP5.ExplanationCache import _getExplanationCache
 
 import zope.interface
 
-from zLOG import LOG
 
 class TradeModelPath(Path):
   """

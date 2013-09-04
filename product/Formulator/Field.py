@@ -8,9 +8,6 @@ import OFS
 from Shared.DC.Scripts.Bindings import Bindings
 from Errors import ValidationError
 from Products.Formulator.Widget import MultiItemsWidget
-from zLOG import LOG
-from lxml import etree
-
 
 class Field:
     """Base class of all fields.

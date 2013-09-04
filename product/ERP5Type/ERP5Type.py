@@ -44,7 +44,6 @@ ERP5TYPE_SECURITY_GROUP_ID_GENERATION_SCRIPT = 'ERP5Type_asSecurityGroupId'
 
 from TranslationProviderBase import TranslationProviderBase
 
-from sys import exc_info
 from zLOG import LOG, ERROR
 from Products.CMFCore.exceptions import zExceptions_Unauthorized
 

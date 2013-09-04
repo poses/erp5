@@ -45,7 +45,6 @@ from Products.ERP5Type.Cache import CachingMethod
 
 DEFAULT_CACHE_FACTORY = 'erp5_ui_long'
 
-from zLOG import LOG
 
 NBSP_UTF8 = u'\xA0'.encode('utf-8')
 

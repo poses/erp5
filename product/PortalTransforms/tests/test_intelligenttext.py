@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from Testing import ZopeTestCase
 
 from Products.CMFCore.utils import getToolByName
 from Products.Archetypes.tests.atsitetestcase import ATSiteTestCase

@@ -38,7 +38,6 @@ from Products.ERP5Type.TransactionalVariable import getTransactionalVariable
 from Products.ERP5.ExpandPolicy import policy_dict
 from Products.ERP5.MovementCollectionDiff import _getPropertyAndCategoryList
 
-from zLOG import LOG
 
 def _compare(tester_list, prevision_movement, decision_movement):
   for tester in tester_list:

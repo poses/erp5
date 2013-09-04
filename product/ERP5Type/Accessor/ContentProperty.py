@@ -38,7 +38,6 @@ DefaultSetter = Base.Setter
 ValueSetter = Base.Setter
 DefaultValueSetter = Base.Setter
 
-from zLOG import LOG
 
 class ValueGetter(Base.Getter):
     """

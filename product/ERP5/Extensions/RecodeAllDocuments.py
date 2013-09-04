@@ -1,7 +1,6 @@
 from Products.ERP5Type.Globals import get_request
 from Acquisition import aq_base
 from Products.ERP5Type.Base import Base
-from zLOG import LOG
 
 message = ''
 

@@ -39,7 +39,6 @@ try:
 except ImportError:
   pychart = None
 
-from zLOG import LOG
 
 class ZPyChartWidget(Widget.Widget):
   """

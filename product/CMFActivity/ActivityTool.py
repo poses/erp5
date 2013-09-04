@@ -30,7 +30,6 @@ import socket
 import urllib
 import threading
 import sys
-from types import StringType
 import re
 from collections import defaultdict
 from cPickle import dumps, loads
@@ -54,7 +53,6 @@ from ActivityRuntimeEnvironment import BaseMessage
 from zExceptions import ExceptionFormatter
 from BTrees.OIBTree import OIBTree
 from Zope2 import app
-from Products.ERP5Type.UnrestrictedMethod import PrivilegedUser
 from zope.site.hooks import setSite
 
 try:
@@ -76,7 +74,6 @@ from Products.MailHost.MailHost import MailHostError
 from zLOG import LOG, INFO, WARNING, ERROR
 from warnings import warn
 from time import time
-
 try:
   from Products.TimerService import getTimerService
 except ImportError:

@@ -35,7 +35,6 @@ from zLOG import LOG
 from Products.ERP5Type.tests.Sequence import SequenceList
 from Products.ERP5.tests.testOrder import TestOrderMixin
 from DateTime import DateTime
-from Products.ERP5Type.Globals import PersistentMapping
 
 class TestPackingListMixin(TestOrderMixin):
   """

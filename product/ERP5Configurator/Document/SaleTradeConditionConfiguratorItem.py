@@ -27,7 +27,6 @@
 ##############################################################################
 
 import zope.interface
-from DateTime import DateTime
 from AccessControl import ClassSecurityInfo
 from Products.ERP5Type import Permissions, PropertySheet, interfaces
 from Products.ERP5Type.XMLObject import XMLObject

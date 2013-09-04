@@ -31,10 +31,8 @@
 import unittest
 import time
 from Products.ERP5Type.tests.ERP5TypeTestCase import ERP5TypeTestCase
-from Products.ERP5Type.tests.backportUnittest import expectedFailure
 from Products.Formulator.Errors import ValidationError
 from Products.ERP5Type.Document import newTempBase
-from DateTime import DateTime
 
 class TestAuthenticationPolicy(ERP5TypeTestCase):
   """

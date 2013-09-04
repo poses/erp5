@@ -29,7 +29,6 @@
 from AccessControl import ClassSecurityInfo
 from Products.ERP5Type.Globals import InitializeClass
 from DocumentationHelper import DocumentationHelper
-from DocumentationSection import DocumentationSection
 from Products.ERP5Type import Permissions
 
 class PortalTypeInstanceDocumentationHelper(DocumentationHelper):

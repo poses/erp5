@@ -33,9 +33,7 @@ from Products.ERP5Type import Permissions
 from Products.ERP5 import _dtmldir
 from Products.ERP5Type.Tool.BaseTool import BaseTool
 from Products.ZSQLCatalog.SQLCatalog import SQLQuery, Query, ComplexQuery
-from zLOG import LOG
 from DateTime import DateTime
-
 _MARKER = []
 
 class DomainTool(BaseTool):

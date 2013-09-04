@@ -30,7 +30,6 @@
 
 
 from testERP5SyncML import TestERP5SyncMLMixin
-from zLOG import LOG
 
 class TestERP5SyncMLVCard(TestERP5SyncMLMixin):
 

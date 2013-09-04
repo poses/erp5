@@ -38,7 +38,6 @@ import sys
 
 _marker = object()
 
-from zLOG import LOG
 
 class CopyContainer:
   """This class redefines the copy/paste methods  which are required in ERP5 in

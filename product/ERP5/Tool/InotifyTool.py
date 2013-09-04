@@ -27,7 +27,6 @@
 ##############################################################################
 
 import errno, glob, os, threading
-from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base
 from Products.ERP5Type.Tool.BaseTool import BaseTool
 from Products.ERP5Type.TransactionalVariable import TransactionalResource

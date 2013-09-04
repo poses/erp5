@@ -30,11 +30,10 @@
   Tests invoice creation from simulation.
 
 """
-import sys, zipfile, xml.dom.minidom
-import StringIO
+import zipfile, xml.dom.minidom
 
 from Products.ERP5Type.tests.ERP5TypeTestCase import ERP5TypeTestCase
-from Products.ERP5Type.tests.utils import FileUpload, DummyMailHost
+from Products.ERP5Type.tests.utils import FileUpload
 from Products.ERP5Type.UnrestrictedMethod import UnrestrictedMethod
 from Products.ERP5OOo.OOoUtils import OOoParser
 from AccessControl.SecurityManagement import newSecurityManager

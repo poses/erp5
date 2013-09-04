@@ -36,7 +36,6 @@ from Products.ERP5SecurePayment import _dtmldir
 from Products.ERP5Security.ERP5UserManager import SUPER_USER
 from AccessControl.SecurityManagement import newSecurityManager
 from AccessControl import getSecurityManager
-from zLOG import LOG
 
 class SecurePaymentTool(BaseTool):
   """

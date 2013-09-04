@@ -29,7 +29,6 @@
 from Products.CMFActivity.ActivityTool import Message, registerActivity
 from ZODB.POSException import ConflictError
 from SQLBase import SQLBase, sort_message_key
-from zExceptions import ExceptionFormatter
 
 import transaction
 

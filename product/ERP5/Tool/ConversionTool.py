@@ -35,7 +35,6 @@ from Products.ERP5Type.Tool.BaseTool import BaseTool
 
 from Products.ERP5 import _dtmldir
 
-from zLOG import LOG
 
 class ConversionTool(BaseTool):
   """

@@ -27,7 +27,6 @@
 ##############################################################################
 
 from Products.ERP5Type.Constraint import Constraint
-from Products.ERP5Type.Message import Message
 translateString = lambda msg: msg  # just to extract messages
 _MARKER = []
 

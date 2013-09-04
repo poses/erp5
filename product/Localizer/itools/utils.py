@@ -16,22 +16,17 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Import from the Standard Library
-from distutils import core
 from distutils.errors import DistutilsOptionError
 from distutils.command.build_py import build_py
 from distutils.command.register import register
 from distutils.command.upload import upload
 from getpass import getpass
-from mimetypes import MimeTypes
 from os import getcwd, open as os_open, devnull, dup2, O_RDWR
-from os.path import exists, join as join_path, sep, splitdrive
 from re import search
 from sys import _getframe, platform, exit, stdin, stdout, stderr
 from urllib2 import HTTPPasswordMgr
-import sys
 
 def get_abspath(local_path, mname=None):
-    """Returns the absolute path to the required file.
     """
     if mname is None:
         mname = _getframe(1).f_globals.get('__name__')

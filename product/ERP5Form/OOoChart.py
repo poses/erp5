@@ -32,12 +32,10 @@ from Products.Formulator import Widget
 from Products.Formulator import Widget, Validator
 from Products.Formulator.DummyField import fields
 from Products.Formulator.Field import ZMIField
-from Selection import Selection
 from Products.ERP5Type.Globals import get_request
 from Products.ERP5.Document.Document import VALID_IMAGE_FORMAT_LIST
 
 from zLOG import LOG
-
 class OOoChartWidget(Widget.Widget):
   """
   This class is capabale of producing ODF

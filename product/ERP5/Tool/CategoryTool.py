@@ -42,7 +42,6 @@ from Products.CMFCore.utils import getToolByName
 from Products.ERP5Type.Cache import caching_instance_method
 from Products.ERP5Type.dynamic import portal_type_class
 
-from zLOG import LOG
 
 class CategoryTool(CopyContainer, CMFCategoryTool, BaseTool):
     """

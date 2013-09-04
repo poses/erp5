@@ -28,7 +28,6 @@
 
 import zope.interface
 from AccessControl import ClassSecurityInfo
-from DateTime import DateTime
 from Products.ERP5Type import Permissions, PropertySheet, interfaces
 from Products.ERP5Type.XMLObject import XMLObject
 from Products.ERP5Type.Message import translateString

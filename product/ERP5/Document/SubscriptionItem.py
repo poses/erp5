@@ -38,7 +38,6 @@ from Products.ERP5.mixin.periodicity import PeriodicityMixin
 from Products.ERP5Type.UnrestrictedMethod import UnrestrictedMethod
 from Products.ERP5Type.Base import Base
 
-from zLOG import LOG
 
 class SubscriptionItem(Item, CompositionMixin, MovementGeneratorMixin,
                        SimulableMixin, PeriodicityMixin):

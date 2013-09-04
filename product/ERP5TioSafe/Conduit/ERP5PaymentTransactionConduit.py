@@ -32,10 +32,8 @@
 from Products.ERP5TioSafe.Conduit.TioSafeBaseConduit import TioSafeBaseConduit
 from Products.ERP5TioSafe.Conduit.ERP5TransactionConduit import ERP5TransactionConduit
 from Products.ERP5SyncML.SyncMLConstant import XUPDATE_INSERT_OR_ADD_LIST
-from base64 import b16encode
 from zLOG import LOG, WARNING
 from copy import deepcopy
-
 class ERP5PaymentTransactionConduit(TioSafeBaseConduit):
   """
     This is the conduit use to synchonize tiosafe payment transaction and ERP5

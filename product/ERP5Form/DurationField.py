@@ -32,8 +32,6 @@ from Products.Formulator import StandardFields
 from Products.Formulator.DummyField import fields
 from Products.PythonScripts.Utility import allow_class
 
-from zLOG import LOG
-from AccessControl import ClassSecurityInfo
 from Products.Formulator.Errors import ValidationError
 
 MINUTE_IN_SECOND = 60

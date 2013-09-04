@@ -36,8 +36,6 @@ from lxml import etree
 from lxml.etree import Element, SubElement
 from xml_marshaller.xml_marshaller import Marshaller
 from OFS.Image import Pdata
-from zLOG import LOG
-from base64 import standard_b64encode
 
 import sha
 

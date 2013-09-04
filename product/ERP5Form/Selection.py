@@ -38,7 +38,6 @@ from Products.PythonScripts.Utility import allow_class
 from Products.CMFCategory.Category import Category
 from Products.ERP5.Document.Domain import Domain
 
-from zLOG import LOG
 
 from Products.ERP5Type.Tool.MemcachedTool import MEMCACHED_TOOL_MODIFIED_FLAG_PROPERTY_ID
 

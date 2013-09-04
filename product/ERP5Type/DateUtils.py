@@ -33,7 +33,6 @@ from AccessControl import ModuleSecurityInfo
 from DateTime import DateTime
 from datetime import datetime
 from string import zfill
-from zLOG import LOG
 
 security = ModuleSecurityInfo('Products.ERP5Type.DateUtils')
 security.declarePublic('addToDate', 'getClosestDate',

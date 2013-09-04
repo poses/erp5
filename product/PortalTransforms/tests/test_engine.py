@@ -1,5 +1,4 @@
 
-from Testing import ZopeTestCase
 from Products.Archetypes.tests.atsitetestcase import ATSiteTestCase
 
 from zope.interface import implements

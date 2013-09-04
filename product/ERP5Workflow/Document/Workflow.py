@@ -31,7 +31,6 @@ from AccessControl import ClassSecurityInfo
 from Products.ERP5Type import Permissions, PropertySheet
 from Products.ERP5Type.XMLObject import XMLObject
 
-from tempfile import mktemp
 import os
 from Products.DCWorkflowGraph.config import DOT_EXE
 from Products.DCWorkflowGraph.DCWorkflowGraph import bin_search, getGraph

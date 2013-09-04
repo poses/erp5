@@ -34,7 +34,6 @@ from sets import ImmutableSet
 from Acquisition import aq_base
 from Persistence import Persistent
 from Products.ERP5Type.Globals import PersistentMapping
-from itertools import izip
 from MySQLdb import ProgrammingError, OperationalError
 from DateTime import DateTime
 

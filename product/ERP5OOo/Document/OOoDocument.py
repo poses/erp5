@@ -31,7 +31,6 @@ import xmlrpclib, base64, re, zipfile, cStringIO
 from warnings import warn
 from xmlrpclib import Fault, ServerProxy, ProtocolError
 from AccessControl import ClassSecurityInfo
-from AccessControl import Unauthorized
 from OFS.Image import Pdata
 from OFS.Image import File as OFSFile
 from zope.contenttype import guess_content_type

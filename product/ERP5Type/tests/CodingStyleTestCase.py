@@ -28,7 +28,6 @@
 ##############################################################################
 
 from Products.ERP5Type.tests.ERP5TypeTestCase import ERP5TypeTestCase
-from Testing import ZopeTestCase
 from Acquisition import aq_base
 
 class CodingStyleTestCase(ERP5TypeTestCase):

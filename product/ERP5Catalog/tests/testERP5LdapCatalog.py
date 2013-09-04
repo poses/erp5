@@ -30,12 +30,9 @@
 import unittest
 import sys
 
-from Testing import ZopeTestCase
 from Products.ERP5Type.tests.ERP5TypeTestCase import ERP5TypeTestCase
 from AccessControl import getSecurityManager
-from AccessControl.SecurityManagement import newSecurityManager
 from zLOG import LOG
-
 
 class TestERP5LdapCatalog(ERP5TypeTestCase):
   """

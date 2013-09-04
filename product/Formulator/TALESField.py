@@ -4,7 +4,6 @@ import Widget, Validator
 from Persistence import Persistent
 import Acquisition
 from Field import ZMIField
-from AccessControl import getSecurityManager
    
 class TALESWidget(Widget.TextWidget):
   default = fields.MethodField('default',

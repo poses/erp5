@@ -43,7 +43,6 @@ from Products.PythonScripts.standard import url_quote_plus
 
 import string
 
-from zLOG import LOG
 
 class EditorWidget(Widget.TextAreaWidget):
   """
