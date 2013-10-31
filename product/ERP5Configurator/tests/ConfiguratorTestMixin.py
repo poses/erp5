@@ -186,7 +186,7 @@ class TestLiveConfiguratorWorkflowMixin(SecurityTestCase):
     standard_bt5_config_save = business_configuration['1']
     self.assertEquals(
       set(self.standard_bt5_list),
-      set([x.bt5_id for x in standard_bt5_config_save.contentValues()]))
+      set(standard_bt5_config_save.contentValues()[0].getBt5IdList()))
 
     # third one: we create a business template to store customer configuration
     custom_bt5_config_save = business_configuration['2']
@@ -320,7 +320,7 @@ class TestLiveConfiguratorWorkflowMixin(SecurityTestCase):
           accounting_business_configuration_save['1']
     self.assertEquals('Standard BT5 Configurator Item',
             bt5_business_configuration_item.getPortalType())
-    self.assertEquals(bt5_id, bt5_business_configuration_item.bt5_id)
+    self.assertEquals((bt5_id,), bt5_business_configuration_item.bt5_id)
 
     # 2. a preference
     preference_buisiness_configurator_item_list =\
@@ -460,7 +460,7 @@ class TestLiveConfiguratorWorkflowMixin(SecurityTestCase):
           preferences_business_configuration_save['5']
     self.assertEquals('Standard BT5 Configurator Item',
             bt5_business_configuration_item.getPortalType())
-    self.assertEquals(bt5_id,
+    self.assertEquals((bt5_id,),
             bt5_business_configuration_item.bt5_id)
 
   def stepCheckConfigureInstallationForm(self, sequence=None, sequence_list=None, **kw):
