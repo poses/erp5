@@ -61,31 +61,11 @@ class StandardBT5ConfiguratorItem(ConfiguratorItemMixin, XMLObject):
 
   def _build(self, business_configuration):
     template_tool = self.getPortalObject().portal_templates
-    bt5_id = self.getBt5Id().split('.')[0]
-
-    if bt5_id in template_tool.getInstalledBusinessTemplateTitleList():
-      LOG("StandardBT5ConfiguratorItem", INFO,
-        "Business Template already Installed: %s for %s" % (bt5_id, self.getRelativeUrl()))
-      return
-
-    def _getRepositoryBusinessTemplateTitleList():
-      return [bt.getTitle() for bt in \
-              template_tool.getRepositoryBusinessTemplateList()]
-    repository_bt_title_list = CachingMethod(
-                         _getRepositoryBusinessTemplateTitleList,
-                         id='StandardBT5_getRepositoryBusinessTemplateTitleList',
-                         cache_factory='erp5_content_long')()
-
-    if bt5_id in repository_bt_title_list:
-      template_tool.installBusinessTemplateListFromRepository([bt5_id],
-                                 update_catalog=self.getUpdateCatalog(0), 
-                                 install_dependency=self.getInstallDependency(1),
-                                 activate=True)
-
-      LOG("StandardBT5ConfiguratorItem", INFO,
-        "Install %s for %s" % (bt5_id, self.getRelativeUrl()))
-      return
-
-    raise ValueError("The business template %s was not found on available \
-                         sources." % bt5_id)
-
+    installed_bt5_list = template_tool.getInstalledBusinessTemplateTitleList()
+    bt5_id_list = []
+    bt5_id_list_append = bt5_id_list.append
+    for bt5_id in self.getBt5IdList():
+      if bt5_id in installed_bt5_list:
+        continue
+      bt5_id_list_append(bt5_id)
+    template_tool.activate(tag="configurator_upgradeSite").upgradeSite(bt5_id_list, dry_run=0)
