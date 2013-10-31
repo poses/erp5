@@ -68,4 +68,7 @@ class StandardBT5ConfiguratorItem(ConfiguratorItemMixin, XMLObject):
       if bt5_id in installed_bt5_list:
         continue
       bt5_id_list_append(bt5_id)
-    template_tool.activate(tag="configurator_upgradeSite").upgradeSite(bt5_id_list, dry_run=0)
+    if not bt5_id_list:
+      return "Everything already Installed"
+    template_tool.upgradeSite(bt5_id_list, dry_run=0)
+    return '%s Installed' % ','.join(bt5_id_list)
